@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Todo List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2 data-key="welcome"></h2>
+
+    <!-- Add Task -->
+    <form id="todoForm" class="form">
+      <input type="text" id="todoInput" class="input" placeholder="Add a new task">
+      <button type="submit" class="btn" data-key="add_task"></button>
+    </form>
+
+    <!-- Completed count -->
+    <p id="taskCount" class="task-count"></p>
+
+    <!-- Todo List -->
+    <ul id="todoList" class="todo-list"></ul>
+
+    <button onclick="logout()" class="btn" data-key="logout"></button>
+
+    <!-- Language switch -->
+    <div class="lang-switch">
+      <button onclick="setLanguage('en')" class="btn">EN</button>
+      <button onclick="setLanguage('ar')" class="btn">AR</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
